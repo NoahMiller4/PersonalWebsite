@@ -6,3 +6,5 @@
 
     Assignment 4
 */
+
+$(this).scrollTop(0);

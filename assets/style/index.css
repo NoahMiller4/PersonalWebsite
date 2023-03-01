@@ -11,6 +11,9 @@
     --app-pink: #ff2dff;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 .container {
   width: min(100% - 30px, 1280px);
