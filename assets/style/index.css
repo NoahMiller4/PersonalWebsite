@@ -18,7 +18,7 @@
 }
 
 main {
-    height: 2100px;
+    height: 305vh;
     background-color: #c5c3c3;
 }
 
@@ -87,22 +87,38 @@ h2 {
 }
 
 section {
-    background: #fff url("../image/mountains.jpg") 
+    background: #fff url("../image/ken-cheung-KonWFWUaAuk-unsplash.jpg") 
     center center / cover no-repeat;
-    height: 90vh; 
+    height: 95vh; 
     text-align: center;
     overflow: hidden;
 }
 
 /* -----------------------------------*/
-/* Middle                             */
+/* Content                            */
 /* -----------------------------------*/
 
 .mid, .bot {
-    height: 600px;
+    height: 105vh;
 }
 
 .border {
     height: 0;
     border-bottom: 5px ridge #3f3d3d;
+}
+
+/* -----------------------------------*/
+/* Footer                             */
+/* -----------------------------------*/
+
+footer {
+    min-width: 100%;
+    height: 60px;
+    background-color: #e0dede;
+    color: #302f2f;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    line-height: 60px;
+    text-transform: uppercase;
 }
