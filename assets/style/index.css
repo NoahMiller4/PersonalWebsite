@@ -10,15 +10,16 @@
     --app-red: #ff3c57;
     --app-pink: #ff2dff;
 }
-  
+
+
 .container {
   width: min(100% - 30px, 1280px);
   margin-inline: auto;
 }
 
 main {
-    height: 1500px;
-    background-color: #e0dede;
+    height: 2100px;
+    background-color: #c5c3c3;
 }
 
 /* -----------------------------------*/
@@ -88,7 +89,20 @@ h2 {
 section {
     background: #fff url("../image/mountains.jpg") 
     center center / cover no-repeat;
-    height: 100vh; 
+    height: 90vh; 
     text-align: center;
     overflow: hidden;
+}
+
+/* -----------------------------------*/
+/* Middle                             */
+/* -----------------------------------*/
+
+.mid, .bot {
+    height: 600px;
+}
+
+.border {
+    height: 0;
+    border-bottom: 5px ridge #3f3d3d;
 }
