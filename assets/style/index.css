@@ -1,0 +1,79 @@
+@import url("./reset.css");
+
+:root {
+    --app-dark-bg: #1a1d28;
+    --app-green: #33ab4e;
+    --app-purple: #6e30d8;
+    --app-orange: #ff833c;
+    --app-blue: #3c57ff;
+    --app-blue-hover: #364ee6;
+    --app-red: #ff3c57;
+    --app-pink: #ff2dff;
+}
+  
+.container {
+  width: min(100% - 30px, 1280px);
+  margin-inline: auto;
+}
+
+main {
+    height: 100vh;
+    background-color: #e0dede;
+}
+
+/* -----------------------------------*/
+/* Header                             */
+/* -----------------------------------*/
+
+header {
+  background-color: #e0dede;
+}
+
+header .flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title h1 {
+  color: #000000;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  line-height: 60px;
+  text-transform: uppercase;
+}
+
+nav {
+  height: 60px;
+}
+
+nav ul {
+  list-style: none;
+  font-size: 0;
+}
+
+nav ul li {
+  display: inline;
+  line-height: 60px;
+}
+nav ul li a {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 0.4px;
+  cursor: pointer;
+  transition: color 0.25s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #3f3d3d;
+}
+
+nav ul li + li {
+  margin-left: 20px;
+}
+
+/* -----------------------------------*/
+/* Buttons                            */
+/* -----------------------------------*/
