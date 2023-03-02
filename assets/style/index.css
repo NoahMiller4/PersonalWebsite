@@ -211,10 +211,18 @@ footer {
     letter-spacing: 0.4px;
     line-height: 60px;
     text-transform: uppercase;
+    text-decoration: none;
+}
+
+.copy {
+    padding-left: 50px;
+    font-size: 30px;
+    line-height: 20px;
 }
 
 .email {
-  color: #302f2f;
-  text-decoration: none;
-  font-size: 40px;
+    padding-right: 50px;
+    color: #302f2f;
+    font-size: 30px;
+    transition: color 0.25s ease-in-out;
 }
