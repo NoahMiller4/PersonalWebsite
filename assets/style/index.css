@@ -90,7 +90,10 @@ header nav ul li a:hover {
     color: #fff;
 }
 
-/* Landing */
+/* -----------------------------------*/
+/*  Landing                           */
+/* -----------------------------------*/
+
 .landing {
     background: #fff url("../image/landing.jpg") center center / cover no-repeat;
     height: 95vh;
@@ -101,6 +104,26 @@ header nav ul li a:hover {
     align-items: center;
     color: #ffffff;
     animation: fadeIn 1s ease-in-out;
+    
+}
+
+
+.landing h2 {
+    font-size: 46px;
+    font-weight: 600;
+    margin-bottom: 20px;
+
+}
+
+#typed-text {
+    font-size: 22px;
+    cursor: default;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.typed-container {
+    max-height: 20px;
 }
 
 @keyframes fadeIn {
@@ -112,15 +135,10 @@ header nav ul li a:hover {
     }
 }
 
-.landing h2 {
-    font-size: 46px;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-
 /* -----------------------------------*/
 /*  About                             */
 /* -----------------------------------*/
+
 .mid {
     background-color: #f9f9f9;
     padding: 80px 0;
@@ -134,6 +152,7 @@ header nav ul li a:hover {
 
 .mid p {
     font-size: 18px;
+    font-weight: 500;
     line-height: 1.6;
     margin-bottom: 40px;
     max-width: 50%;
@@ -151,6 +170,7 @@ header nav ul li a:hover {
 /* -----------------------------------*/
 /*  Programming Languages             */
 /* -----------------------------------*/
+
 .languages {
     display: flex;
     justify-content: space-around;
@@ -161,7 +181,7 @@ header nav ul li a:hover {
 
 .language-title {
     text-align: center;
-    margin-top: 60px;
+    margin-top: 30px;
     color: #3553ff;
 }
 
@@ -170,15 +190,29 @@ header nav ul li a:hover {
     margin: auto;
     text-align: center;
     background-color: #fff;
-    border: 2px solid #333;
+    border: 2px solid var(--app-dark-bg);
     border-radius: 10px;
     margin: 10px;
-    width: calc(33.33% - 100px);
+    max-width: 150px;
+    height: 150px;
+    display: grid;
+    padding: 10px;
+    width: calc(33.33% - 250px);
 }
 
 .language img {
     margin: auto;
-    max-width: 100px;
+    height: 100px;
+    width: 100px;
+}
+
+.language img:hover {
+    transform: scale(1.2); 
+}
+
+.language h4:hover {
+    color: var(--app-purple);
+    cursor: default;
 }
 
 .language h4 {
@@ -186,11 +220,32 @@ header nav ul li a:hover {
     margin-top: 10px;
 }
 
+.progress {
+    background-color: #ccc;
+    height: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: var(--app-blue);
+    border-radius: 5px;
+    animation: progress-bar-animation 2s ease-in-out;
+}
+
+@keyframes progress-bar-animation {
+    0% {
+        width: 0;
+    }
+}
+
 /* -----------------------------------*/
 /*  Bottom                            */
 /* -----------------------------------*/
+
 .bot {
-    background: linear-gradient(to bottom right, #1a1d28, #2e3346);
+    background: linear-gradient(to bottom right, rgb(56, 64, 97), #232736);
     color: #fff;
     padding: 80px 0;
     text-align: center;
@@ -208,9 +263,13 @@ header nav ul li a:hover {
 }
 
 .data p {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 300;
-    margin-bottom: 20px;
+}
+
+.data:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
 }
 
 a img {
@@ -218,11 +277,13 @@ a img {
     display: block;
     height: 150px;
     width: 150px;
+    margin-top: 10px;
 }
 
 /* -----------------------------------*/
 /*  Footer                            */
 /* -----------------------------------*/
+
 footer {
     background-color: #e0dede;
     color: #333;
@@ -234,19 +295,19 @@ footer {
 }
 
 .copy {
-    line-height: 60px;
+    line-height: 45px;
     font-size: 24px;
     font-weight: 500;
     margin: 0;
+    margin-left: 20px;
 }
 
 .mail {
-    margin-right: 60px;
-}
-.mail {
     margin-top: auto;
     margin-bottom: 10px;
+    margin-right: 100px;
     text-align: center;
+    
 }
 
 .email-button {
@@ -262,6 +323,7 @@ footer {
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s;
+    min-width: 125px;
 }
 
 .email-button button:hover {
@@ -272,14 +334,11 @@ footer {
 /*  Media queries                     */
 /* -----------------------------------*/
 
-
-
 @media screen and (max-width: 1200px) {
     .language {
         width: calc(50% - 20px);
+        height: calc(50% - 20px);
     }
-
-    
 
     a img {
         height: 100px;
@@ -298,22 +357,31 @@ footer {
             width: 50px;
             height: 50px;
     }
-}
-@media screen and (max-width: 480px) {
-    .language {
-        width: calc(100% - 20px);
+
+    .title h1 {
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    header nav ul li a {
+        font-size: 14px;
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 664px) {
     .language {
         width: calc(100% - 20px);
     }
+
+    
 }
 
 @media(max-width: 1200px) {
+
     main {width: 100%;}
-    .mid, .bot {height: 200vh;}
+
+    .mid, .bot {height: 80%;}
+
     .row { 
         position: relative;
         right: 100px;
@@ -323,7 +391,13 @@ footer {
         right: 250px;
         top: 1800px;
     }
+
     footer {
         position: relative;
+        padding-left: 30px;
+    }
+
+    .mail {
+        margin-right: 50px;
     }
 } 
