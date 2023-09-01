@@ -92,7 +92,7 @@ header nav ul li a:hover {
 
 /* Landing */
 .landing {
-    background: #fff url("../image//space-nasa.jpg") center center / cover no-repeat;
+    background: #fff url("../image/landing.jpg") center center / cover no-repeat;
     height: 95vh;
     text-align: center;
     display: flex;
@@ -231,7 +231,6 @@ footer {
     display: flex;
     justify-content: space-between;
     animation: fadeIn 1s ease-in-out;
-    margin-top: auto;
 }
 
 .copy {
@@ -278,8 +277,10 @@ footer {
 @media screen and (max-width: 1200px) {
     .language {
         width: calc(50% - 20px);
-        
     }
+
+    
+
     a img {
         height: 100px;
         width: 100px;
@@ -291,6 +292,13 @@ footer {
     }
 }
 
+
+@media screen and (max-width: 780px){
+    .language img {
+            width: 50px;
+            height: 50px;
+    }
+}
 @media screen and (max-width: 480px) {
     .language {
         width: calc(100% - 20px);
@@ -317,6 +325,5 @@ footer {
     }
     footer {
         position: relative;
-        top: 190vh;
     }
 } 
