@@ -193,8 +193,8 @@ header nav ul li a:hover {
     border: 2px solid var(--app-dark-bg);
     border-radius: 10px;
     margin: 10px;
-    max-width: 150px;
-    height: 150px;
+    max-width: 160px;
+    height: 160px;
     display: grid;
     padding: 10px;
     width: calc(33.33% - 250px);
@@ -208,10 +208,11 @@ header nav ul li a:hover {
 
 .language img:hover {
     transform: scale(1.2); 
+    padding: 5px;
 }
 
 .language h4:hover {
-    color: var(--app-purple);
+    color: var(--app-blue-hover);
     cursor: default;
 }
 
